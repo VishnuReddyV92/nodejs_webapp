@@ -43,15 +43,15 @@ jobs:
           cd /home/ubuntu/actions-runner/_work/nodejs_webapp/nodejs_webapp
 
           # # Check if the application is already running
-          # RUNNING=$(pm2 show searchapi)
+          # RUNNING=$(pm2 show searchapplication)
 
           # # If the application is running, stop it
           # if [ -n "$RUNNING" ]; then
-          #   pm2 stop searchapi
+          #   pm2 stop searchapplication
           # fi
 
           # Install Node.js dependencies
           npm install
 
           # Start the application
-          pm2 start index.js --name=searchapi
+          pm2 start index.js --name=searchapplication
